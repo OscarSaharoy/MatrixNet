@@ -53,16 +53,16 @@ class MatrixNet(object):
 
 			layer   = self.net[i]
 			
+			if layer is self.net[0]:
+
+				continue
+			
 			if layer is self.net[-1]:
 
 				self.errors[i]    = self.target[self.randex] - self.net[i]
 				self.deltas[i]    = self.errors[i] * self.deriv(self.net[i])
 
 				self.synaps[i-1] += np.dot(np.array([self.net[i-1]]).T,np.array([self.deltas[i]]))
-
-			elif layer is self.net[0]:
-
-				pass
 
 			else:
 
