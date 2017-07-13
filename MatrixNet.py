@@ -21,9 +21,9 @@ class MatrixNet(object):
 
 		for i,layer in enumerate(self.struct):
 
-			self.net     += [np.random.random((layer))]
-			self.errors  += [np.random.random((layer))]
-			self.deltas  += [np.random.random((layer))]
+			self.net     += [np.zeros((layer))]
+			self.errors  += [np.zeros((layer))]
+			self.deltas  += [np.zeros((layer))]
 
 		self.synaps = []
 		
