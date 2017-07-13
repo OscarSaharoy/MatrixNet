@@ -64,11 +64,11 @@ class MatrixNet(object):
 
 		# self.randex is a random index, relating to a random pair of input and target vectors.
 
-		self.randex  = random.randint(0,len(self.target)-1)
+		self.randex = random.randint(0,len(self.target)-1)
 
 		# Setting the first layer of nodes - the input nodes - to be equal to the input vector.
 
-		self.net[0]  = self.input[self.randex]
+		self.net[0] = self.input[self.randex]
 
 		for i,_ in enumerate(self.net[:-1]):
 
