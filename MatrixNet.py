@@ -45,8 +45,6 @@ class MatrixNet(object):
 			synaps        = self.synaps[i]
 			self.net[i+1] = self.activ(np.dot(layer,synaps))
 
-		print self.target[self.randex], self.net[-1]
-
 	def backprop(self):
 
 		for i in range(len(self.net))[::-1]:
