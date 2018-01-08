@@ -5,4 +5,4 @@ Relies on matrixes and uses numpy to handle parallel calculations. The script ca
 
 The network has no bias nodes, which should be added in future. However, good fits to the sample training data I have used can be reached.
 
-This script may be useful to those trying to learn about implementations of the backpropagation algorithm, and a commentated version is availible.
+This script may be useful to those trying to learn about implementations of the backpropagation algorithm.
