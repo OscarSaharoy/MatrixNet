@@ -7,6 +7,8 @@ import numpy
 	- import MatrixNet
 	- create Network object eg: net = MatrixNet.Network(structure,inputset,targetset, print_cost=False)
 	- call net.train(iterations) 
+	- you can pass data though the network once it is trained like: output = net.forward(input_data)
+	  Ensure input data is a numpy matrix of the correct length. 
 
 	structure is a List containing number of nodes in each layer: number of input 
 	nodes must match length of input vectors and number of output nodes 
