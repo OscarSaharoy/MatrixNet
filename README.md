@@ -4,3 +4,5 @@ Simple multilayer perceptron neural network library which I wrote to learn about
 Bias nodes have not been implemented, but the network seems to function well without them. Numpy matrixes are used to simplify the code and maintain readability.
 
 More detailed directions for use of the library can be found in comments at the top of the script.
+
+![](MatrixNet/Example.gif)
