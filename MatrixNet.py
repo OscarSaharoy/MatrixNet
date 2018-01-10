@@ -30,8 +30,8 @@ inputset  = [numpy.matrix([[  1.0,  2.0]]),
              numpy.matrix([[  0.3,  2.1]])]
 
 targetset = [[  0.2,  0.4]),
- 	         [  1.0,  0.4]),
- 	         [  0.5,  1.0])]
+             [  1.0,  0.4]),
+			 [  0.5,  1.0])]
 
 	Note: maximum network output on any node is 1.0 as sigmoid function is used. 
 
