@@ -8,7 +8,12 @@ import numpy
 	- create Network object eg: net = MatrixNet.Network(structure,inputset,targetset, print_cost=False)
 	- call net.train(iterations) 
 	- you can pass data though the network once it is trained like: output = net.forward(input_data)
-	  Ensure input data is a numpy matrix of the correct length. 
+	  Ensure input data is a numpy matrix of the correct length.
+	- you can also add or chang data to the input or target sets by assinging to net.inputset or net.targetset eg:
+
+		net.inputset = new_input_data
+		net.targetset.append(new_target)
+		
 
 	structure is a List containing number of nodes in each layer: number of input 
 	nodes must match length of input vectors and number of output nodes 
