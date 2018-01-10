@@ -9,7 +9,7 @@ import numpy
 	- call net.train(iterations) 
 	- you can pass data though the network once it is trained like: output = net.forward(input_data)
 	  Ensure input data is a numpy matrix of the correct length.
-	- you can also add or chang data to the input or target sets by assinging to net.inputset or net.targetset eg:
+	- you can also add or change data to the input or target sets by assinging to net.inputset or net.targetset eg:
 
 		net.inputset = new_input_data
 		net.targetset.append(new_target)
