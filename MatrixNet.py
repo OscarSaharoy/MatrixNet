@@ -51,7 +51,7 @@ class Network(object):
 		self.layers     = len(structure)  # Number of layers
  
 		self.activate   = lambda x: 1/(1+numpy.exp(-x))  # Sigmoid activation function
-		self.derivativ  = lambda x: x*(1-x)  # Derivative of activation function
+		self.derivative = lambda x: x*(1-x)  # Derivative of activation function
 
 		# Following lists initialised to copys of structure to ensure they have the correct number of elements.
 		
@@ -133,11 +133,11 @@ class Network(object):
 	
 			elif layer == self.layers-1:
 	
-				deltas[layer] = arr(values[layer]-tar) * self.derivativ(arr(values[layer]))
+				deltas[layer] = arr(values[layer]-tar) * self.derivative(arr(values[layer]))
 	
 			else:
 	
-				deltas[layer] = arr(deltas[layer+1] * weights[layer].T) * self.derivativ(arr(values[layer]))
+				deltas[layer] = arr(deltas[layer+1] * weights[layer].T) * self.derivative(arr(values[layer]))
 	
 	
 			deltas[layer]     = mat(deltas[layer])
