@@ -5,4 +5,4 @@ Bias nodes have not been implemented, but the network seems to function well wit
 
 More detailed directions for use of the library can be found in comments at the top of the script.
 
-![Example Use](https://github.com/OscarSaharoy/MatrixNet/blob/master/Example.gif) 
+![Example Use](https://github.com/OscarSaharoy/MatrixNet/blob/master/assets/Example.gif) 
