@@ -7,7 +7,7 @@ import numpy
 	- import MatrixNet
 	- create Network object eg: net = MatrixNet.Network(structure,inputset,targetset, print_cost=False)
 	- call net.train(iterations) 
-	- you can pass data though the network once it is trained like: output = net.forward(input_data)
+	- you can pass data though the network once it is trained like: output = net.forward(input_data)[:-1]
 	  Ensure input data is a numpy matrix of the correct length.
 	- you can also add or change data to the input or target sets by assinging to net.inputset or net.targetset eg:
 
